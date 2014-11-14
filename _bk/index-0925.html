@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Lovepalz Club</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script src="js/Lion-bootstrap.min.js"></script>
+<script src="js/tween/TweenMax.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+
+  <!-- Bootstrap -->
+  <link href="css/Lion-bootstrap.min.css" rel="stylesheet">
+  <!-- Lion CSS -->
+  <link href="css/LPC.home.css" rel="stylesheet">
+  <!-- 手機平板 -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/LPC.home.m.css" media="screen and (max-width: 767px)"> -->
+  <!-- Font -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div id="wrapper">
+
+<!-- Profile Sidebar -->
+   <div id="sidebar-wrapper">
+<!-- 使用者大頭貼 -->
+    <div class="Profile-Img">
+      <!-- User Img -->
+        <div class="User-ImgWrapper">
+          <div class="User-img Girl-A"></div>
+        </div>
+    </div>
+<!-- 使用者名字 -->
+    <div class="User-Name Profile">
+      Lee Min Ho , 27
+    </div>
+<!-- 使用者 ABOUT -->
+    <ul class="Profile-About list-unstyled">
+      <li><h3>About</h3></li>
+      <li>
+        <p>
+          Lee Min Ho is the model origin, its theatrical debut in 2003, "Yulin growth Diary" plays a small role, after starring in "Nonstop 5", "Love Song meals" and other plays, scenes not much. 2006 in the TV series "Secret Campus" for the first time bear positive actor.
+        </p>
+      </li>
+    </ul>
+<!-- 使用者想找的關係 -->
+    <ul class="Profile-Tag list-inline">
+      <li>
+        <p>
+          Find stimulating love
+        </p>
+      </li>
+      <li>
+        <p>
+          Looking for relationship stability
+        </p>
+      </li>
+    </ul>
+
+  </div>
+<!-- /#sidebar-wrapper -->
+
+<div class="container-fluid">
+
+  <!-- header -->
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#LovePalzClubMenu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="index.html"><img src="img/Logo.png"></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="LovePalzClubMenu">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="nav-profile"  href="#profile-toggle" id="profile-toggle">
+              <i class="fa fa-user fa-lg"></i> Profile
+            </a>
+          </li>
+          <li>
+            <a class="nav-like" href="#">
+              <i class="fa fa-smile-o fa-lg"></i> Like
+            </a>
+          </li>
+          <li>
+            <a class="nav-chat" href="#">
+            <i class="fa fa-comments fa-lg"></i> Chat
+            </a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- content -->
+
+<section id="page-content-wrapper">
+
+    <div class="UserContent">
+      <div id="container" class="js-masonry"
+        data-masonry-options='{ "columnWidth": 0, "itemSelector": ".User" }'>
+<!-- 使用者圖片小 顏色A -->
+      <div class="User bg-Color-A">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-A"></div>
+          </div>
+        <!-- User info -->
+          <div class="User-Name text-center">Carrie Chang</div>
+
+          <div class="User-Info">
+
+              <div class="User-Like bg-Color-A text-center col-xs-6 col-md-6">
+                <i class="fa fa-smile-o fa-fw"></i> 999
+              </div>
+
+              <div class="User-Friends bg-Color-A text-center col-xs-6 col-md-6">
+                <i class="fa fa-users fa-fw"></i> 999
+              </div>
+
+              <div class="User-Star-Hit">
+                <a class="User-Star bg-Color-A text-center col-xs-6 col-md-6"  href="#">
+                  <i class="fa fa-heart fa-lg"></i>
+                </a>
+              </div>
+
+              <div class="User-Chat-Hit">
+                <a class="User-Chat bg-Color-A text-center col-xs-6 col-md-6"  href="#">
+                  <i class="fa fa-comment fa-lg"></i>
+                </a>
+              </div>
+
+            </div>
+
+        </div>
+<!-- 使用者圖片大 顏色B -->
+        <div class="User Big bg-Color-B">
+      
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-B"></div>
+          </div>
+        <!-- User info -->
+
+        <div class="User-Name text-center Big">Carrie Chang</div>
+
+          <div class="User-Info">
+
+              <div class="User-Like bg-Color-B text-center col-xs-6 col-md-3 Big">
+                <i class="fa fa-smile-o fa-fw"></i> 999
+              </div>
+
+              <div class="User-Friends bg-Color-B text-center col-xs-6 col-md-3 Big">
+                <i class="fa fa-users fa-fw"></i> 999
+              </div>
+
+              <div class="User-Star-Hit">
+                <a class="User-Star bg-Color-B text-center col-xs-6 col-md-3 Big"  href="#">
+                  <i class="fa fa-heart fa-lg"></i>
+                </a>
+              </div>
+
+              <div class="User-Chat-Hit">
+                <a class="User-Chat bg-Color-B text-center col-xs-6 col-md-3 Big"  href="#">
+                  <i class="fa fa-comment fa-lg"></i>
+                </a>
+              </div>
+
+          </div>
+        </div>
+<!-- 使用者圖片小 顏色C -->
+      <div class="User bg-Color-C">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-C"></div>
+          </div>
+        <!-- User info -->
+          <div class="User-Name text-center">Carrie Chang</div>
+
+          <div class="User-Info">
+
+              <div class="User-Like bg-Color-C text-center col-xs-6">
+                <i class="fa fa-smile-o fa-fw"></i> 999
+              </div>
+
+              <div class="User-Friends bg-Color-C text-center col-xs-6">
+                <i class="fa fa-users fa-fw"></i> 999
+              </div>
+
+              <div class="User-Star-Hit">
+                <a class="User-Star bg-Color-C text-center col-xs-6"  href="#">
+                  <i class="fa fa-heart fa-lg"></i>
+                </a>
+              </div>
+
+              <div class="User-Chat-Hit">
+                <a class="User-Chat bg-Color-C text-center col-xs-6"  href="#">
+                  <i class="fa fa-comment fa-lg"></i>
+                </a>
+              </div>
+
+            </div>
+
+        </div>
+<!-- 使用者圖片小 顏色D -->
+      <div class="User bg-Color-D">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-D"></div>
+          </div>
+        <!-- User info -->
+          <div class="User-Name text-center">Carrie Chang</div>
+
+          <div class="User-Info">
+
+              <div class="User-Like bg-Color-D text-center col-xs-6">
+                <i class="fa fa-smile-o fa-fw"></i> 999
+              </div>
+
+              <div class="User-Friends bg-Color-D text-center col-xs-6">
+                <i class="fa fa-users fa-fw"></i> 999
+              </div>
+
+              <div class="User-Star-Hit">
+                <a class="User-Star bg-Color-D text-center col-xs-6"  href="#">
+                  <i class="fa fa-heart fa-lg"></i>
+                </a>
+              </div>
+
+              <div class="User-Chat-Hit">
+                <a class="User-Chat bg-Color-D text-center col-xs-6"  href="#">
+                  <i class="fa fa-comment fa-lg"></i>
+                </a>
+              </div>
+
+            </div>
+
+        </div>
+<!-- 使用者圖片小 顏色E -->
+      <div class="User bg-Color-E">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-E"></div>
+          </div>
+        <!-- User info -->
+          <div class="User-Name text-center">Carrie Chang</div>
+
+          <div class="User-Info">
+
+              <div class="User-Like bg-Color-E text-center col-xs-6">
+                <i class="fa fa-smile-o fa-fw"></i> 999
+              </div>
+
+              <div class="User-Friends bg-Color-E text-center col-xs-6">
+                <i class="fa fa-users fa-fw"></i> 999
+              </div>
+
+              <div class="User-Star-Hit">
+                <a class="User-Star bg-Color-E text-center col-xs-6"  href="#">
+                  <i class="fa fa-heart fa-lg"></i>
+                </a>
+              </div>
+
+              <div class="User-Chat-Hit">
+                <a class="User-Chat bg-Color-E text-center col-xs-6"  href="#">
+                  <i class="fa fa-comment fa-lg"></i>
+                </a>
+              </div>
+
+            </div>
+
+        </div>
+<!-- 使用者圖片小 顏色F -->
+      <div class="User bg-Color-F">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-F"></div>
+          </div>
+        <!-- User info -->
+          <div class="User-Name text-center">Carrie Chang</div>
+
+          <div class="User-Info">
+
+              <div class="User-Like bg-Color-F text-center col-xs-6">
+                <i class="fa fa-smile-o fa-fw"></i> 999
+              </div>
+
+              <div class="User-Friends bg-Color-F text-center col-xs-6">
+                <i class="fa fa-users fa-fw"></i> 999
+              </div>
+
+              <div class="User-Star-Hit">
+                <a class="User-Star bg-Color-F text-center col-xs-6"  href="#">
+                  <i class="fa fa-heart fa-lg"></i>
+                </a>
+              </div>
+
+              <div class="User-Chat-Hit">
+                <a class="User-Chat bg-Color-F text-center col-xs-6"  href="#">
+                  <i class="fa fa-comment fa-lg"></i>
+                </a>
+              </div>
+
+            </div>
+
+        </div>
+<!-- 使用者圖片小 顏色G -->
+      <div class="User bg-Color-G">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-G"></div>
+          </div>
+        <!-- User info -->
+          <div class="User-Name text-center">Carrie Chang</div>
+
+          <div class="User-Info">
+
+              <div class="User-Like bg-Color-G text-center col-xs-6">
+                <i class="fa fa-smile-o fa-fw"></i> 999
+              </div>
+
+              <div class="User-Friends bg-Color-G text-center col-xs-6">
+                <i class="fa fa-users fa-fw"></i> 999
+              </div>
+
+              <div class="User-Star-Hit">
+                <a class="User-Star bg-Color-G text-center col-xs-6"  href="#">
+                  <i class="fa fa-heart fa-lg"></i>
+                </a>
+              </div>
+
+              <div class="User-Chat-Hit">
+                <a class="User-Chat bg-Color-G text-center col-xs-6"  href="#">
+                  <i class="fa fa-comment fa-lg"></i>
+                </a>
+              </div>
+
+            </div>
+
+        </div>
+<!-- 使用者圖片大 顏色H -->
+      <div class="User bg-Color-H Big">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-H"></div>
+          </div>
+        <!-- User info -->
+          <div class="User-Name text-center Big">Carrie Chang</div>
+
+          <div class="User-Info">
+
+              <div class="User-Like bg-Color-H text-center col-xs-3 Big">
+                <i class="fa fa-smile-o fa-fw"></i> 999
+              </div>
+
+              <div class="User-Friends bg-Color-H text-center col-xs-3 Big">
+                <i class="fa fa-users fa-fw"></i> 999
+              </div>
+
+              <div class="User-Star-Hit">
+                <a class="User-Star bg-Color-H text-center col-xs-3 Big"  href="#">
+                  <i class="fa fa-heart fa-lg"></i>
+                </a>
+              </div>
+
+              <div class="User-Chat-Hit">
+                <a class="User-Chat bg-Color-H text-center col-xs-3 Big"  href="#">
+                  <i class="fa fa-comment fa-lg"></i>
+                </a>
+              </div>
+
+            </div>
+
+        </div>
+
+<!-- 使用者圖片結尾 -->
+      </div>
+    </div>
+  </section>
+
+</div>
+
+</div>
+<!-- /#wrapper -->
+
+<script src="js/LPC.motion.js"></script>
+
+</body>
+</html>

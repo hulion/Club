@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Lovepalz Club</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script src="js/Lion-bootstrap.min.js"></script>
+<script src="js/tween/TweenMax.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+
+  <!-- Bootstrap -->
+  <link href="css/Lion-bootstrap.min.css" rel="stylesheet">
+  <!-- Lion CSS -->
+  <link href="css/LPC.like.css" rel="stylesheet">
+  <link href="css/LPC.home.css" rel="stylesheet">
+  <!-- 手機平板 -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/LPC.home.m.css" media="screen and (max-width: 767px)"> -->
+  <!-- Font -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div id="wrapper">
+
+<!-- Profile Sidebar -->
+  <div id="sidebar-wrapper">
+  <!-- 使用者大頭貼 -->
+    <div class="Profile-Img">
+      <!-- User Img -->
+        <div class="User-ImgWrapper">
+          <div class="User-img Girl-A"></div>
+        </div>
+      <!-- 編輯按鈕 -->
+        <div class="Profile-Edit">
+          <a href="Profile-Edit.html">
+          <i class="fa fa-pencil-square-o fa-lg"></i>
+           Edit
+          </a>
+        </div>
+      <!-- 關閉按鈕 -->
+        <div class="Profile-Close">
+          <a href="#profile-toggle-Close" id="profile-toggle-Close">
+          <i class="fa fa-times-circle fa-2x"></i>
+          </a>
+        </div>
+    </div>
+  <!-- 使用者名字 -->
+    <div class="User-Name Profile">
+      Carrie , 32
+    </div>
+  <!-- 使用者 ABOUT -->
+    <ul class="Profile-About list-unstyled">
+      <li><h3>ABOUT</h3></li>
+      <li class="About-text">
+        <p>
+          My name is Carrie, 32 years old, born and raised in New York.
+          <br>158cm / 48kg. I like to talk about sex, let me know if you have the same interests.
+        </p>
+      </li>
+    </ul>
+  <!-- 使用者想找的關係 -->
+    <ul class="Profile-Tag list-inline">
+      <li>
+        <p>
+          Looking for excitement
+        </p>
+      </li>
+      <li>
+        <p>
+          Looking for relationship
+        </p>
+      </li>
+    </ul>
+
+  </div>
+<!-- /#Profile Sidebar -->
+
+<!-- My toys Sidebar -->
+  <div id="Toy-sidebar-wrapper">
+    <ul class="list-unstyled Toy-Btn-List">
+      <li class="Toy-Btn">
+        <a class="Toy-Btn offLine" href="#">
+          Twist A001
+        </a>
+      </li>
+      <li class="Toy-Btn">
+        <a class="Toy-Btn onLine" href="#">
+          Twist A002
+        </a>
+      </li>
+      <li class="Toy-Btn">
+        <a class="Toy-Btn Find" href="#">
+          Twist A002
+        </a>
+      </li>
+      <li class="Toy-Btn">
+        <a class="Toy-Btn Once-found" href="#">
+          Twist A002
+        </a>
+      </li>
+    </ul>
+  </div>
+<!-- /#My toys Sidebar -->
+
+<div class="container-fluid">
+
+  <!-- header -->
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#LovePalzClubMenu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="index.html"><img src="img/Logo.png"></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="LovePalzClubMenu">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="nav-profile"  href="#profile-toggle" id="profile-toggle">
+              <i class="fa fa-user fa-lg"></i> Profile
+            </a>
+          </li>
+          <li>
+            <a class="nav-like" href="#">
+              <i class="fa fa-heart fa-lg"></i> Like
+            </a>
+          </li>
+          <li>
+            <a class="nav-chat" href="#">
+            <i class="fa fa-comments fa-lg"></i> Chat
+            </a>
+          </li>
+          <li>
+            <a class="nav-chat" href="#My-Toy-toggle" id="My-Toy-toggle">
+            <i class="fa fa-gear fa-lg"></i> My Toy
+            </a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</div>
+
+
+<!-- content -->
+
+<section id="page-content-wrapper" style="background-color: RGBA(233, 234, 237, 1);">
+
+    <div class="UserContent">
+<!-- Like Tab -->
+    <ul class="nav nav-pills Like-Tab">
+      <li class="active"><a href="#">Mutual likes</a></li>
+      <li><a href="My-likes.html">My likes</a></li>
+    </ul>
+<!-- 互相Like-開頭 -->
+      <div id="container" class="js-masonry"
+        data-masonry-options='{ "columnWidth": 0, "itemSelector": ".User" }'>
+<!-- 使用者圖片小 顏色A -->
+      <div class="User bg-Color-A">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-A"></div>
+          </div>
+        <!-- User info -->
+        <div class="User-Name">
+          <div class="User-Job bg-Color-A"><em>Associate Professor</em></div>
+          <a href="#">Carrie Chang</a>
+          <div class="User-City bg-Color-A">
+            <i class="fa fa-map-marker"></i> - San Francisco
+          </div>
+
+        </div>
+          <div class="User-Line"></div>
+          <div class="User-Info">
+
+          <ul class="list-inline">
+
+            <li class="User-Star-Hit">
+              <!-- <div class="User-Star-Padding">
+                <a class="User-Star bg-Color-A" href="#">
+                  <i class="fa fa-heart"></i> 
+                </a>
+              </div> -->
+              <!-- 取消愛心 -->
+              <div class="User-Star-Padding">
+                <a class="User-Star bg-Color-A" href="#">
+                  <i class="fa fa-heart-o"></i> 
+                </a>
+              </div>
+            </li>
+
+            <li class="User-Chat-Hit">
+              <div class="User-Chat-Padding">
+                <a class="User-Chat bg-Color-A" href="#">
+                  <i class="fa fa-comment"></i> 
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+          </div>
+
+        </div>
+<!-- 使用者圖片小 顏色B -->
+        <div class="User bg-Color-B">
+      
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-B"></div>
+          </div>
+        <!-- User info -->
+        <div class="User-Name">
+          <div class="User-Job bg-Color-B"><em>Actress</em></div>
+          <a href="Profile.html">Madeline</a>
+          <div class="User-City bg-Color-B">
+            <i class="fa fa-map-marker"></i> - Taipei
+          </div>
+
+        </div>
+          <div class="User-Line"></div>
+          <div class="User-Info">
+
+          <ul class="list-inline">
+
+            <li class="User-Star-Hit">
+              <div class="User-Star-Padding">
+                <a class="User-Star bg-Color-B" href="#">
+                  <i class="fa fa-heart"></i> 
+                </a>
+              </div>
+            </li>
+
+            <li class="User-Chat-Hit">
+              <div class="User-Chat-Padding">
+                <a class="User-Chat bg-Color-B" href="#">
+                  <i class="fa fa-comment"></i> 
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+          </div>
+        </div>
+<!-- 使用者圖片小 顏色C -->
+      <div class="User bg-Color-C">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-C"></div>
+          </div>
+        <!-- User info -->
+        <div class="User-Name">
+          <div class="User-Job bg-Color-C"><em>Geologist</em></div>
+          <a href="#">Grace</a>
+          <div class="User-City bg-Color-C">
+            <i class="fa fa-map-marker"></i> - Iceland
+          </div>
+        </div>
+          <div class="User-Line"></div>
+          <div class="User-Info">
+
+          <ul class="list-inline">
+
+            <li class="User-Star-Hit">
+              <div class="User-Star-Padding">
+                <a class="User-Star bg-Color-C" href="#">
+                  <i class="fa fa-heart"></i> 
+                </a>
+              </div>
+            </li>
+
+            <li class="User-Chat-Hit">
+              <div class="User-Chat-Padding">
+                <a class="User-Chat bg-Color-C" href="#">
+                  <i class="fa fa-comment"></i> 
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+          </div>
+
+        </div>
+<!-- 使用者圖片小 顏色D -->
+      <div class="User bg-Color-D">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-D"></div>
+          </div>
+        <!-- User info -->
+        <div class="User-Name">
+          <div class="User-Job bg-Color-D"><em>Scientist</em></div>
+          <a href="#">Katherine</a>
+          <div class="User-City bg-Color-D">
+            <i class="fa fa-map-marker"></i> - Romania
+          </div>
+
+        </div>
+          <div class="User-Line"></div>
+          <div class="User-Info">
+
+          <ul class="list-inline">
+
+            <li class="User-Star-Hit">
+              <div class="User-Star-Padding">
+                <a class="User-Star bg-Color-D" href="#">
+                  <i class="fa fa-heart"></i> 
+                </a>
+              </div>
+            </li>
+
+            <li class="User-Chat-Hit">
+              <div class="User-Chat-Padding">
+                <a class="User-Chat bg-Color-D" href="#">
+                  <i class="fa fa-comment"></i> 
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+          </div>
+
+        </div>
+<!-- 使用者圖片小 顏色E -->
+      <div class="User bg-Color-E">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-E"></div>
+          </div>
+        <!-- User info -->
+        <div class="User-Name">
+          <div class="User-Job bg-Color-E"><em>Librarian</em></div>
+          <a href="#">Lauren</a>
+          <div class="User-City bg-Color-E">
+            <i class="fa fa-map-marker"></i> - Port Moresby
+          </div>
+
+        </div>
+          <div class="User-Line"></div>
+          <div class="User-Info">
+
+          <ul class="list-inline">
+
+            <li class="User-Star-Hit">
+              <div class="User-Star-Padding">
+                <a class="User-Star bg-Color-E" href="#">
+                  <i class="fa fa-heart"></i> 
+                </a>
+              </div>
+            </li>
+
+            <li class="User-Chat-Hit">
+              <div class="User-Chat-Padding">
+                <a class="User-Chat bg-Color-E" href="#">
+                  <i class="fa fa-comment"></i> 
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+          </div>
+
+        </div>
+<!-- 使用者圖片小 顏色F -->
+      <div class="User bg-Color-F">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-F"></div>
+          </div>
+        <!-- User info -->
+        <div class="User-Name">
+          <div class="User-Job bg-Color-F"><em>Cook</em></div>
+          <a href="#">Victoria</a>
+          <div class="User-City bg-Color-F">
+            <i class="fa fa-map-marker"></i> - Burma
+          </div>
+
+        </div>
+          <div class="User-Line"></div>
+          <div class="User-Info">
+
+          <ul class="list-inline">
+
+            <li class="User-Star-Hit">
+              <div class="User-Star-Padding">
+                <a class="User-Star bg-Color-F" href="#">
+                  <i class="fa fa-heart"></i> 
+                </a>
+              </div>
+            </li>
+
+            <li class="User-Chat-Hit">
+              <div class="User-Chat-Padding">
+                <a class="User-Chat bg-Color-F" href="#">
+                  <i class="fa fa-comment"></i> 
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+          </div>
+
+        </div>
+<!-- 使用者圖片小 顏色G -->
+      <div class="User bg-Color-G">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-H"></div>
+          </div>
+        <!-- User info -->
+        <div class="User-Name">
+          <div class="User-Job bg-Color-G"><em>Mathematician</em></div>
+          <a href="#">Samantha</a>
+          <div class="User-City bg-Color-G">
+            <i class="fa fa-map-marker"></i> - Singapore
+          </div>
+        </div>
+          <div class="User-Line"></div>
+          <div class="User-Info">
+
+          <ul class="list-inline">
+
+            <li class="User-Star-Hit">
+              <div class="User-Star-Padding">
+                <a class="User-Star bg-Color-G" href="#">
+                  <i class="fa fa-heart"></i> 
+                </a>
+              </div>
+            </li>
+
+            <li class="User-Chat-Hit">
+              <div class="User-Chat-Padding">
+                <a class="User-Chat bg-Color-G" href="#">
+                  <i class="fa fa-comment"></i> 
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+          </div>
+
+        </div>
+<!-- 使用者圖片小 顏色H -->
+      <div class="User bg-Color-H">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-G"></div>
+          </div>
+        <!-- User info -->
+        <div class="User-Name">
+          <div class="User-Job bg-Color-H"><em>Model</em></div>
+          <a href="Profile.html">Natalie</a>
+          <div class="User-City bg-Color-H">
+            <i class="fa fa-map-marker"></i> - Argentina
+          </div>
+
+        </div>
+          <div class="User-Line"></div>
+          <div class="User-Info">
+
+          <ul class="list-inline">
+
+            <li class="User-Star-Hit">
+              <div class="User-Star-Padding">
+                <a class="User-Star bg-Color-H" href="#">
+                  <i class="fa fa-heart"></i> 
+                </a>
+              </div>
+            </li>
+
+            <li class="User-Chat-Hit">
+              <div class="User-Chat-Padding">
+                <a class="User-Chat bg-Color-H" href="#">
+                  <i class="fa fa-comment"></i> 
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+          </div>
+
+        </div>
+
+<!-- 使用者圖片小 顏色B -->
+        <div class="User bg-Color-B">
+      
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-B"></div>
+          </div>
+        <!-- User info -->
+        <div class="User-Name">
+          <div class="User-Job bg-Color-B"><em>Actress</em></div>
+          <a href="Profile.html">Madeline</a>
+          <div class="User-City bg-Color-B">
+            <i class="fa fa-map-marker"></i> - Taipei
+          </div>
+
+        </div>
+          <div class="User-Line"></div>
+          <div class="User-Info">
+
+          <ul class="list-inline">
+
+            <li class="User-Star-Hit">
+              <div class="User-Star-Padding">
+                <a class="User-Star bg-Color-B" href="#">
+                  <i class="fa fa-heart"></i> 
+                </a>
+              </div>
+            </li>
+
+            <li class="User-Chat-Hit">
+              <div class="User-Chat-Padding">
+                <a class="User-Chat bg-Color-B" href="#">
+                  <i class="fa fa-comment"></i> 
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+          </div>
+        </div>
+<!-- 使用者圖片小 顏色D -->
+      <div class="User bg-Color-D">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-D"></div>
+          </div>
+        <!-- User info -->
+        <div class="User-Name">
+          <div class="User-Job bg-Color-D"><em>Scientist</em></div>
+          <a href="#">Katherine</a>
+          <div class="User-City bg-Color-D">
+            <i class="fa fa-map-marker"></i> - Romania
+          </div>
+
+        </div>
+          <div class="User-Line"></div>
+          <div class="User-Info">
+
+          <ul class="list-inline">
+
+            <li class="User-Star-Hit">
+              <div class="User-Star-Padding">
+                <a class="User-Star bg-Color-D" href="#">
+                  <i class="fa fa-heart"></i> 
+                </a>
+              </div>
+            </li>
+
+            <li class="User-Chat-Hit">
+              <div class="User-Chat-Padding">
+                <a class="User-Chat bg-Color-D" href="#">
+                  <i class="fa fa-comment"></i> 
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+          </div>
+
+        </div>
+<!-- 使用者圖片小 顏色F -->
+      <div class="User bg-Color-F">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-F"></div>
+          </div>
+        <!-- User info -->
+        <div class="User-Name">
+          <div class="User-Job bg-Color-F"><em>Cook</em></div>
+          <a href="#">Victoria</a>
+          <div class="User-City bg-Color-F">
+            <i class="fa fa-map-marker"></i> - Burma
+          </div>
+
+        </div>
+          <div class="User-Line"></div>
+          <div class="User-Info">
+
+          <ul class="list-inline">
+
+            <li class="User-Star-Hit">
+              <div class="User-Star-Padding">
+                <a class="User-Star bg-Color-F" href="#">
+                  <i class="fa fa-heart"></i> 
+                </a>
+              </div>
+            </li>
+
+            <li class="User-Chat-Hit">
+              <div class="User-Chat-Padding">
+                <a class="User-Chat bg-Color-F" href="#">
+                  <i class="fa fa-comment"></i> 
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+          </div>
+
+        </div>
+<!-- 使用者圖片小 顏色E -->
+      <div class="User bg-Color-E">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-E"></div>
+          </div>
+        <!-- User info -->
+        <div class="User-Name">
+          <div class="User-Job bg-Color-E"><em>Librarian</em></div>
+          <a href="#">Lauren</a>
+          <div class="User-City bg-Color-E">
+            <i class="fa fa-map-marker"></i> - Port Moresby
+          </div>
+
+        </div>
+          <div class="User-Line"></div>
+          <div class="User-Info">
+
+          <ul class="list-inline">
+
+            <li class="User-Star-Hit">
+              <div class="User-Star-Padding">
+                <a class="User-Star bg-Color-E" href="#">
+                  <i class="fa fa-heart"></i> 
+                </a>
+              </div>
+            </li>
+
+            <li class="User-Chat-Hit">
+              <div class="User-Chat-Padding">
+                <a class="User-Chat bg-Color-E" href="#">
+                  <i class="fa fa-comment"></i> 
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+          </div>
+
+        </div>
+<!-- 使用者圖片小 顏色A -->
+      <div class="User bg-Color-A">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-A"></div>
+          </div>
+        <!-- User info -->
+        <div class="User-Name">
+          <div class="User-Job bg-Color-A"><em>Associate Professor</em></div>
+          <a href="#">Carrie Chang</a>
+          <div class="User-City bg-Color-A">
+            <i class="fa fa-map-marker"></i> - San Francisco
+          </div>
+
+        </div>
+          <div class="User-Line"></div>
+          <div class="User-Info">
+
+          <ul class="list-inline">
+
+            <li class="User-Star-Hit">
+              <div class="User-Star-Padding">
+                <a class="User-Star bg-Color-A" href="#">
+                  <i class="fa fa-heart"></i> 
+                </a>
+              </div>
+            </li>
+
+            <li class="User-Chat-Hit">
+              <div class="User-Chat-Padding">
+                <a class="User-Chat bg-Color-A" href="#">
+                  <i class="fa fa-comment"></i> 
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+          </div>
+
+        </div>
+<!-- 使用者圖片小 顏色C -->
+      <div class="User bg-Color-C">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-C"></div>
+          </div>
+        <!-- User info -->
+        <div class="User-Name">
+          <div class="User-Job bg-Color-C"><em>Geologist</em></div>
+          <a href="#">Grace</a>
+          <div class="User-City bg-Color-C">
+            <i class="fa fa-map-marker"></i> - Iceland
+          </div>
+        </div>
+          <div class="User-Line"></div>
+          <div class="User-Info">
+
+          <ul class="list-inline">
+
+            <li class="User-Star-Hit">
+              <div class="User-Star-Padding">
+                <a class="User-Star bg-Color-C" href="#">
+                  <i class="fa fa-heart"></i> 
+                </a>
+              </div>
+            </li>
+
+            <li class="User-Chat-Hit">
+              <div class="User-Chat-Padding">
+                <a class="User-Chat bg-Color-C" href="#">
+                  <i class="fa fa-comment"></i> 
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+          </div>
+
+        </div>
+<!-- 使用者圖片小 顏色H -->
+      <div class="User bg-Color-H">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-G"></div>
+          </div>
+        <!-- User info -->
+        <div class="User-Name">
+          <div class="User-Job bg-Color-H"><em>Model</em></div>
+          <a href="Profile.html">Natalie</a>
+          <div class="User-City bg-Color-H">
+            <i class="fa fa-map-marker"></i> - Argentina
+          </div>
+
+        </div>
+          <div class="User-Line"></div>
+          <div class="User-Info">
+
+          <ul class="list-inline">
+
+            <li class="User-Star-Hit">
+              <div class="User-Star-Padding">
+                <a class="User-Star bg-Color-H" href="#">
+                  <i class="fa fa-heart"></i> 
+                </a>
+              </div>
+            </li>
+
+            <li class="User-Chat-Hit">
+              <div class="User-Chat-Padding">
+                <a class="User-Chat bg-Color-H" href="#">
+                  <i class="fa fa-comment"></i> 
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+          </div>
+
+        </div>
+<!-- 使用者圖片小 顏色G -->
+      <div class="User bg-Color-G">
+
+        <!-- User Img -->
+          <div class="User-ImgWrapper">
+            <div class="User-img Girl-H"></div>
+          </div>
+        <!-- User info -->
+        <div class="User-Name">
+          <div class="User-Job bg-Color-G"><em>Mathematician</em></div>
+          <a href="#">Samantha</a>
+          <div class="User-City bg-Color-G">
+            <i class="fa fa-map-marker"></i> - Singapore
+          </div>
+        </div>
+          <div class="User-Line"></div>
+          <div class="User-Info">
+
+          <ul class="list-inline">
+
+            <li class="User-Star-Hit">
+              <div class="User-Star-Padding">
+                <a class="User-Star bg-Color-G" href="#">
+                  <i class="fa fa-heart"></i> 
+                </a>
+              </div>
+            </li>
+
+            <li class="User-Chat-Hit">
+              <div class="User-Chat-Padding">
+                <a class="User-Chat bg-Color-G" href="#">
+                  <i class="fa fa-comment"></i> 
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+          </div>
+
+        </div>
+
+<!-- 使用者圖片結尾 -->
+      </div><!-- 互相Like結尾 -->
+
+
+    </div>
+  </section>
+
+</div>
+
+<!-- /#wrapper -->
+
+<script src="js/LPC.motion.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,379 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"i",
+				"important"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"h",
+				"h3	Tag"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"m",
+				"min-width"
+			],
+			[
+				"f",
+				"float"
+			],
+			[
+				"di",
+				"div	Tag"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"ti",
+				"text-align"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"l",
+				"li	Tag"
+			],
+			[
+				"blo",
+				"inline-block"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"border-",
+				"border-radius"
+			],
+			[
+				"fon",
+				"font-variant"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"border-s",
+				"border-style"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"o",
+				"overflow"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"border-top-",
+				"border-top-right-radius"
+			],
+			[
+				"border-top",
+				"border-top-right-radius"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 287.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 476.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/index.html",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/Profile-1112.html",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/Mutual-likes.html",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/css/LPC.Profile.css",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/Profile-1024.html",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/css/LPC.home.css",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/index-No-People.html",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/My-likes.html",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/index-1030.html",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/index-1112.html",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/js/LPC.motion.js",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/index-1030 拷貝.html",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/css/LPC.like.css",
+		"/Users/Lion/Downloads/SlidePushMenus/index.html",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/index-1024.html",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/Profile-Video-1024.html",
+		"/Users/Lion/Desktop/untitled.html",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/Profile.html",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/Profile-Edit.html",
+		"/private/var/folders/n1/mbb6_g0s29j449mb1ql1mbrc0000gn/T/fz3temp-1/wp-config.php",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/Register.html",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/css/LPC.home.1007.css",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/index-Demo.html",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/Profile-Boy.html",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/index-1002.html",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/config.codekit",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/js/Lion-bootstrap.min.js",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/profile.html",
+		"/Users/Lion/Dropbox/Public/LovePalz/Lovepalz-Club/www/css/LPC.profile.css",
+		"/Users/Lion/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 54.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"User-name",
+			"User-na",
+			"User-City",
+			"navbar",
+			"選單",
+			"nav-profile",
+			">\n",
+			"Login-Title-FB",
+			"Inbox-sidebar-wrapper",
+			"profile-Chat-bg",
+			"User-Friends-Wrapper",
+			"User-Name",
+			"User-City",
+			"About-text",
+			"	\n",
+			"nav-chat",
+			"              <div class=\"User-Like bg-Color-B text-center col-xs-6\">\n                <i class=\"fa fa-smile-o fa-fw\"></i> 999\n              </div>\n\n              <div class=\"User-Friends bg-Color-B text-center col-xs-6\">\n                <i class=\"fa fa-users fa-fw\"></i> 999\n              </div>\n\n              <div class=\"User-Star-Hit\">\n                <a class=\"User-Star bg-Color-B text-center col-xs-6\"  href=\"#\">\n                  <i class=\"fa fa-heart fa-lg\"></i>\n                </a>\n              </div>\n\n              <div class=\"User-Chat-Hit\">\n                <a class=\"User-Chat bg-Color-B text-center col-xs-6\"  href=\"#\">\n                  <i class=\"fa fa-comment fa-lg\"></i>\n                </a>\n              </div>",
+			"User-Info",
+			"User-Name ",
+			"></",
+			"form-group-edit",
+			"inputName",
+			"User-Tag-Details-bg",
+			"修改圖片",
+			"第二條訊息"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"          <ul class=\"list-inline\">\n\n            <li class=\"User-Star-Hit\">\n              <div class=\"User-Star-Padding\">\n                <a class=\"User-Star bg-Color-A\" href=\"#\">\n                  <i class=\"fa fa-heart\"></i> \n                </a>\n              </div>\n            </li>\n\n            <li class=\"User-Chat-Hit\">\n              <div class=\"User-Chat-Padding\">\n                <a class=\"User-Chat bg-Color-A\" href=\"#\">\n                  <i class=\"fa fa-comment\"></i> \n                </a>\n              </div>\n            </li>\n\n          </ul>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 51.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "Club.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 215.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

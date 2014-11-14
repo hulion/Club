@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2014-10-07 19:19:46
+ * @version $Id$
+ */
+
+.Like-Tab{
+	margin-bottom: 15px;
+}
+/*選擇到的*/
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    background-color: RGBA(254, 205, 47, 1) !important;
+    color: RGBA(68, 60, 69, 1) !important;
+}
+
+/*未選擇*/
+.Like-Tab li a{
+	color: RGBA(68, 60, 69, 1);
+}
+.Like-Tab li a:hover {
+	background-color: RGBA(159, 141, 39, 1) !important;
+	color: RGBA(85, 76, 21, 1);
+}

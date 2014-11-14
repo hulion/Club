@@ -1,0 +1,493 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2014-07-31 14:57:16
+ * @version $Id$
+ */
+
+/*個人圖片幻燈片*/
+.profile-slide{
+	margin-top: 10px;
+	height: 100%;
+}
+.carousel-inner .item{
+	height: 560px;
+}
+.slide-Btn-LR{
+	margin-top: 250px;
+}
+.profile-slide-ImgWrapper{
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%;
+}
+.profile-slide-Img{
+	width: 100%;
+	height: 560px;
+	background-repeat: no-repeat;
+	background-color: #000;
+	background-size: cover;
+	background-position: 50% 0%;
+}
+.profile-slide-Img.Girl-A{
+	background-image: url(../img/IMG_03.jpg);
+}
+.profile-slide-Img.Girl-B{
+	background-image: url(../img/IMG_02.jpg);
+}
+.profile-slide-Img.Girl-C{
+	background-image: url(../img/IMG_01.jpg);
+}
+.profile-slide-Img.Boy-A{
+	background-image: url(../img/IMG_05.jpg);
+}
+.profile-slide-Img.Boy-B{
+	background-image: url(../img/IMG_04.jpg);
+}
+.profile-slide-Img.Boy-C{
+	background-image: url(../img/IMG_06.jpg);
+}
+
+/*個人圖片測試*/
+
+/*訊息*/
+.profile-Chat-bg{
+	margin-top: 10px;
+	height: 560px;
+	background-color: RGBA(223, 198, 120, 1);
+}
+.Chat-title-bg{
+	height: 50px;
+	font-family: Lato;
+	font-weight: 300;
+	background-color: RGBA(61, 53, 61, 1);
+	padding-top: 8px;
+	padding-left: 10px;
+}
+.Chat-title-name{
+	position: relative;
+	font-size: 1.2em;
+	color: rgba(255,255,255,.8);
+	letter-spacing: .06em;
+	padding-top: 13px;
+	z-index: 1;
+}
+.Chat-title-name span i{
+	margin-top: -2px;
+}
+.Chat-Video-Btn{
+	z-index: 2;
+	padding-top: 7px;
+	padding-left: 10px;
+}
+.Chat-Video-Btn a{
+	text-decoration: none;
+	color: rgba(255,255,255,.3);
+}
+.Chat-Video-Btn a:hover{
+	text-decoration: none;
+	color: rgba(254,205,47,1);
+}
+.video-Icon{
+	color: rgba(61, 53, 61, 1);
+}
+
+.Chat-MessageBox-Bg{
+	height: 446px;
+	padding: 20px;
+}
+.Chat-MessageBox{
+	height: 105%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+/*使用者連線玩具顯示*/
+
+.User-ImgWrapper.Chat{
+	margin-bottom: 4px;
+}
+.User-Link{
+	font-family: Lato;
+	font-weight: 300;
+	font-size: 1em;
+	letter-spacing: .03em;
+}
+.User-Link.OnLine{
+	color: RGBA(133, 173, 109, 1);
+}
+.User-Link.OffLine{
+	color: RGBA(221, 70, 77, 1);
+}
+.Camera-Connection-Btn button{
+	border-radius: 30px;
+}
+.Toy-Connection-Btn button{
+	border-radius: 30px;
+}
+.Chat-User-Like button{
+	border-radius: 30px;
+}
+
+/*對話框*/
+.arrow_box {
+	position: relative;
+	background: rgba(233, 237, 239, 1);
+	border: 4px solid #;
+	border-radius: 3px;
+	padding: 5px 8px 5px 8px;
+	font-family: Lato;
+	font-weight: 400;
+	font-size: 1.2em;
+	letter-spacing: .04em;
+	word-break: break-all;
+	color: rgba(70, 70, 70, 1);
+	margin-bottom: 4px;
+
+}
+.arrow_box:after, .arrow_box:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-right-color: rgba(233, 237, 239, 1);
+	border-width: 5px;
+	margin-top: -5px;
+}
+
+.arrow_box_left {
+	position: relative;
+	background: rgba(201, 240, 161, 1);
+	border: 4px solid #;
+	border-radius: 3px;
+	padding: 5px 8px 5px 8px;
+	font-family: Lato;
+	font-weight: 400;
+	font-size: 1.2em;
+	letter-spacing: .04em;
+	color: rgba(70, 70, 70, 1);
+	word-break: break-all;
+	margin-bottom: 4px;
+
+}
+.arrow_box_left:after, .arrow_box_left:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box_left:after {
+	border-left-color: rgba(201, 240, 161, 1);
+	border-width: 5px;
+	margin-top: -5px;
+}
+
+/*使用者輸入框*/
+.Chat-Input-bg{
+	height: 50px;
+	font-family: Lato;
+	font-weight: 300;
+	background-color: RGBA(61, 53, 61, 1);
+}
+.Chat-text-input{
+	float: left;
+	width: 80%;
+	padding: 8px 10px 5px 10px;
+}
+.Chat-text-input input{
+	background-color: RGBA(37, 32, 38, 1);
+	border-color: RGBA(70, 60, 71, 1);
+	color: RGBA(255, 255, 255, 1);
+}
+.Chat-Send-Btn{
+	float: left;
+	width: 20%;
+	padding: 8px 10px 0px 0px;
+}
+.Chat-Send-Btn button{
+	width: 100%;
+	padding-left: 10px;
+}
+
+.Details-Wrapper{
+	margin-top: 1%;
+	position: relative;
+	height: 350px;
+	background-color: rgba(255,255,255,1);
+}
+
+/*關於使用者*/
+
+.Profile-About.Details{
+	padding: 0 0% 0% 0%;
+	font-family: Lato;
+	color: RGBA(118, 118, 118, 1);
+}
+.Profile-About.Details > li h3{
+	font-weight: 300;
+	color:RGBA(194, 194, 194, 1);
+}
+
+.Profile-About.Details > li p{
+	color: RGBA(99, 87, 99, 1);
+	resize:none;
+	background-color: RGBA(61, 53, 61, 0);
+	border-color: RGBA(61, 53, 61, 0);
+}
+.About-text.Details p{
+	/*height: 150px;*/
+	color: RGBA(118, 118, 118, 1)!important;
+}
+.User-Name.Details{
+	font-size: 4em;
+	color: RGBA(194, 194, 194, 1);
+	font-weight: 100;
+	text-align: left;
+	font-family: Lato;
+}
+
+/*使用者共同朋友*/
+.User-Friends.Details{
+	padding: 0;
+	color: RGBA(112, 98, 112, 1);
+	font-weight: 300;
+}
+.User-Friends.Details h3{
+	font-weight: 300;
+	color: RGBA(194, 194, 194, 1);
+}
+.User-Friends-Wrapper{
+	margin-top: 5px;
+	margin-left: 7px;
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	background-color: RGBA(112, 98, 112, 1);
+	color: rgba(255,255,255,1);
+}
+.Friends-Img{
+	background-position: 50%;
+	background-size: cover;
+}
+.Friends-Img.Img-A{
+	background-image: url(../img/Girl-Img-A.jpg);
+}
+.Friends-Img.Img-B{
+	background-image: url(../img/Boy-Img-B.jpg);
+}
+.Friends-Img.Img-C{
+	background-image: url(../img/Girl-Img-C.jpg);
+}
+.Friends-Img.Img-D{
+	background-image: url(../img/Girl-Img-D.jpg);
+}
+.Friends-Img.Img-E{
+	background-image: url(../img/Boy-Img-C.jpg);
+}
+.Friends-Img.Img-F{
+	background-image: url(../img/Girl-Img-G.jpg);
+}
+/*使用者共同興趣*/
+.User-Like.Details{
+	padding: 0;
+	color: RGBA(112, 98, 112, 1);
+	font-weight: 300;
+}
+.User-Like.Details h3{
+	font-weight: 300;
+}
+.User-Like-Wrapper{
+	margin-top: 5px;
+	margin-left: 7px;
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	background-color: RGBA(112, 98, 112, 1);
+	color: rgba(255,255,255,1);
+}
+.Like-Img{
+	background-position: 50%;
+	background-size: cover;
+}
+.Like-Img.Img-A{
+	background-image: url(../img/interest-A.jpg);
+}
+.Like-Img.Img-B{
+	background-image: url(../img/interest-B.jpg);
+}
+.Like-Img.Img-C{
+	background-image: url(../img/interest-C.jpg);
+}
+.Like-Img.Img-D{
+	background-image: url(../img/interest-D.jpg);
+}
+.Like-Img.Img-E{
+	background-image: url(../img/interest-E.jpg);
+}
+.Like-Img.Img-F{
+	background-image: url(../img/interest-F.jpg);
+}
+/*使用者尋找的關係*/
+.Profile-Tag.Details{
+	padding: 4% 2% 2% 2%;
+}
+.Profile-Tag-Title{
+	padding-top: 4%;
+	font-family: Lato;
+	color: RGBA(112, 98, 112, 1);
+	font-weight: 300;
+	background-color: rgba(255,255,255,0);
+}
+/*使用者切換按鈕*/
+.User-Btn-Wrapper{
+	position: absolute;
+	margin-top: 16px;
+	margin-right: 15px;
+	right: 0;
+}
+.User-Next-Btn button{
+	width: 34px;
+	height: 34px;
+	border-radius: 17px;
+}
+
+/*修改圖片*/
+.Edit-User-pic-Title{
+	font-family: Lato;
+	font-weight: 300;
+}
+.Edit-User-pic {
+	margin-top: 20px;
+}
+.Edit-User-pic li{
+	height: auto;
+}
+.Edit-User-pic li img{
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+.Edit-User-pic .col-md-6{
+	padding-left: 10px;
+	padding-right: 0px;
+}
+.Edit-User-pic .Edit-Img-add{
+	position: absolute;
+	font-family: Lato;
+	font-weight: 300;
+	color: RGBA(68, 60, 69, 1);
+	font-size: 1.2em;
+	top: 32%;
+	left: 20%;
+}
+.Edit-User-pic .Edit-Img-add:hover{
+	position: absolute;
+	font-family: Lato;
+	font-weight: 300;
+	color: RGBA(118, 105, 119, 1);
+	font-size: 1.2em;
+	top: 32%;
+	left: 20%;
+	text-decoration: none;
+}
+.UploadPhoto-Btn{
+	position: absolute;
+	top: 16px;
+	right: 15px;
+}
+.form-group-edit{
+	margin-top: 20px;
+	margin-bottom: -10px;
+}
+.form-group-edit.col-sm-4.col-sm-2{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.Edit-Birthday{
+	margin-left: 7px;
+}
+.Edit-Birthday-Select{
+	margin-top: 20px;
+}
+.Edit-gender{
+	display: inline-block;
+}
+
+.Edit-Save-Bg{
+	height: 70px;
+	margin-top: 50px;
+	background-color: RGBA(68, 60, 69, 1);
+	border-radius: 35px;
+}
+.Edit-Save-Bg ul{
+	margin-right: 10px;
+}
+.Edit-Save-Bg ul li{
+	margin-top: 12px;
+}
+.Edit-Save-Bg ul li a{
+	border-radius: 50px;
+}
+
+.Edit-Page-Title{
+	font-family: Lato;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+/*1024 edit*/
+
+.User-map-text{
+	display: inline;
+	padding-left: 10px;
+}
+.rtc-video-me{
+	margin-top: 10px;
+	height: 560px;
+	background-color: RGBA(71, 164, 71, 1);
+}
+.rtc-video-her{
+	position: absolute;
+	width: 160px;
+	height: 90px;
+	background-color: RGBA(194, 194, 194, 1);
+	margin-top: 450px;
+	margin-left: 20px;
+	z-index: 3;
+}
+
+/*1112 edit*/
+
+.Chat-User-Name{
+	min-width: 50px;
+	height: 18px;
+	overflow-y:hidden;
+	font-size: .5em;
+	color:#8C7B42;
+}
+
+/*平板*/
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/*行動版*/
+
+@media screen and (max-width: 767px) {
+
+}

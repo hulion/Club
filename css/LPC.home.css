@@ -1,0 +1,1119 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2014-07-31 14:57:16
+ * @version $Id$
+ */
+
+/*background-color: RGBA(233, 234, 237, 1);*/
+
+/*全局定義*/
+html{
+	margin: 0;
+	background-color: rgba(233, 234, 237, 1);
+	overflow-x: hidden;
+}
+body{
+	padding-top: 60px;
+}
+
+/*選單列*/
+.nav{
+	font-family: Lato;
+}
+
+.navbar-default{
+	background-color: RGBA(61, 53, 61, .95);
+	border-color: RGBA(61, 53, 61, 1);
+}
+.navbar-fixed-top .nav {
+    padding: 10px 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 15px;
+}
+
+.navbar-brand img{
+	margin-top: 6%;
+}
+.navbar-default .navbar-nav > li > a{
+	text-align:center;
+	color: RGBA(254, 205, 47, 1);
+	margin-right: 5px;
+	font-family: Lato;
+	font-weight: 300;
+	letter-spacing: .06em;
+	border-radius: 5%;
+}
+
+/*Link 滑入顏色*/
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: RGBA(61, 53, 61, 1);
+    background-color: RGBA(254, 205, 47, 1);
+    font-family: Lato;
+    font-weight: 900;
+}
+/*行動版線的顏色*/
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color: RGBA(79, 72, 79, 1);
+}
+/*行動版選單顏色*/
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: RGBA(86, 76, 86, 1);
+}
+/*1009 登入按鈕*/
+.nav-login{
+	cursor: pointer;
+}
+/*登入視窗*/
+.modal-login{
+	margin-top: 30px;
+}
+.modal-footer{
+	margin-top: -10px;
+}
+.modal-title{
+	font-family: Lato;
+	font-weight: 300;
+}
+.modal-content{
+	background-color: RGBA(49, 44, 50, .9);
+	border-color: RGBA(49, 44, 50, .8);
+	border-width: 10px;
+}
+.Login-Title-FB{
+	margin-top: -20px;
+	margin-bottom: 20px;
+}
+.Login-Title-LP{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 15px;
+}
+.Login-Title-LP h2,.Login-Title-FB h2{
+	font-family: Lato;
+	font-weight: 300;
+	color: RGBA(100, 89, 102, 1);
+}
+.btn-left{
+	display: block;
+	position: absolute;
+	margin-left: 20px;
+	left: 0;
+}
+.btn-facebook{
+	background-color: RGBA(69, 96, 155, 1);
+	border-color: RGBA(83, 115, 179, 1);
+	font-size: 18pt;
+	font-family: Lato;
+	font-weight: 400;
+	letter-spacing: .06em;
+}
+.btn-facebook:hover{
+	background-color: RGBA(80, 107, 161, 1);
+	border-color: RGBA(83, 115, 179, 1);
+}
+.Login-label-title{
+	color: RGBA(100, 89, 102, 1);
+	font-family: Lato;
+	font-weight: 300;
+}
+.Login-input{
+	background-color: RGBA(49, 44, 50, .9);
+	border-color: RGBA(100, 89, 102, 1);
+	font-family: Lato;
+	font-weight: 300;
+}
+/*登入視窗下面*/
+.modal-footer{
+	border-color: RGBA(100, 89, 102, 1);
+}
+.Login-btn-cancel{
+	background-color: RGBA(49, 44, 50, .9);
+	border-color: RGBA(100, 89, 102, 1);
+	color: RGBA(100, 89, 102, 1);
+}
+.Login-btn-Game{
+	background-color: RGBA(254, 205, 47, 1);
+	border-color: RGBA(254, 211, 87, 1);
+	color: RGBA(102, 90, 55, 1);
+}
+.Login-btn-Game:hover{
+	background-color: RGBA(102, 90, 55, 1);
+	border-color: RGBA(254, 211, 87, 1);
+	color: RGBA(254, 205, 47, 1);
+}
+.Login-btn-Sign{
+	background-color: RGBA(49, 44, 50, .9);
+	border-color: RGBA(100, 89, 102, 1);
+	color: RGBA(100, 89, 102, 1);
+}
+
+/*詳細資訊側邊欄*/
+
+/*Toggle Styles*/
+
+#wrapper {
+    padding-left: 0;
+    padding-top: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 26%;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 26%;
+    width: 0;
+    height: 100%;
+    margin-left: -26%;
+    margin-top: 11px;
+    overflow-y: auto;
+    background-color: RGBA(61, 53, 61, 1);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/*左側欄寬度*/
+#wrapper.toggled #sidebar-wrapper {
+    width: 26%;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -26%;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: RGBA(254, 205, 47, 1);
+}
+
+.Profile-Img{
+	width: 100%;
+	margin-top: 11px;
+	padding: 3% 8% 8% 8%;
+}
+
+.Profile-About{
+	padding: 0 8% 2% 7%;
+	font-family: Lato;
+	color: RGBA(112, 98, 112, 1);
+}
+
+.Profile-About > li h3{
+	font-weight: 300;
+	padding-left: 2%;
+}
+
+.Profile-About > li p{
+	width: 100%;
+	font-weight: 400;
+	color: RGBA(99, 87, 99, 1);
+	resize:none;
+	background-color: RGBA(61, 53, 61, 1);
+	border-color: RGBA(61, 53, 61, 1);
+	padding-left: 2%;
+}
+.About-text{
+	height: 65px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.Profile-Tag{
+	padding: 0% 9% 0% 9%;
+}
+
+.Profile-Tag li{
+	margin-bottom: .3em;
+	height: 20px;
+	font-family: Lato;
+	font-size: 1em;
+	font-weight: 900;
+	background-color: RGBA(254, 205, 47, 1);
+	border-radius: 10px;
+	padding: 0px 8px 0px 8px;
+}
+
+.Profile-Edit{
+	position: absolute;
+	z-index: 3;
+	top: 15px;
+	font-family: Lato;
+	font-size: 1em;
+	font-weight: 400;
+	letter-spacing: .04em;
+}
+
+.Profile-Edit a{
+	padding: 5px 10px 5px 10px;
+	background-color: RGBA(112, 98, 112, 1);
+	color: RGBA(61, 53, 61, 1);
+	border-radius: 20px;
+}
+.Profile-Edit a:hover {
+	text-decoration: none;
+	background-color:  RGBA(254, 205, 47, 1);
+	color: RGBA(61, 53, 61, 1);
+	border-radius: 20px;
+}
+
+.Profile-Close{
+	position: absolute;
+	z-index: 3;
+	top: 15px;
+	right: 0;
+	margin-right: 10px;
+	font-family: Lato;
+	font-size: 1em;
+	font-weight: 400;
+	letter-spacing: .04em;
+}
+
+.Profile-Close a{
+	color: RGBA(112, 98, 112, 1);
+}
+.Profile-Close a:hover {
+	text-decoration: none;
+	color: RGBA(254, 205, 47, 1);
+}
+
+/*My Toy*/
+
+#wrapper.Toy-toggled {
+    padding-top: 0%;
+}
+#Toy-sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    width: 0;
+    height: 100%;
+    right: 0;
+    margin-right: -74%;
+    margin-top: 11px;
+    overflow-y: auto;
+    background-color: RGBA(36, 31, 36, .9);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+/*右側欄寬度*/
+#wrapper.Toy-toggled #Toy-sidebar-wrapper {
+    width: 100%;
+}
+
+#Toy-page-content-wrapper {
+    width: 100%;
+}
+
+#wrapper.Toy-toggled #Toy-page-content-wrapper {
+    position: absolute;
+    margin-left: -26%;
+}
+
+/*Toys 按鈕列表*/
+
+.Toy-Btn-List{
+	margin-top: 15px;
+	height: 86%;
+	overflow-x: hidden;
+	overflow-y:scroll;
+	/*background-color: #fff;*/
+}
+.Toy-Btn{
+	width: 26%;
+	padding: 15px;
+	font-family: Lato;
+	font-weight: 300;
+	text-align:center;
+	margin-top: -7px;
+	margin-bottom: -7px;
+}
+.Toy-Btn .offLine{
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	background-color: RGBA(121, 121, 121, 1);	
+	border-radius: 8px;
+	color: RGBA(254, 205, 47, 1);
+	text-decoration: none;
+}
+.Toy-Btn .offLine:hover{
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	background-color: RGBA(254, 205, 47, 1);
+	border-radius: 8px;
+	color: RGBA(127, 103, 33, 1);
+}
+.Toy-Btn .onLine{
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	background-color: RGBA(92, 184, 92, 1);
+	color: RGBA(233, 234, 237, 1);
+	border-radius: 8px;
+	text-decoration: none;
+}
+.Toy-Btn .onLine:hover{
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	background-color: RGBA(108, 208, 109, 1);
+	border-radius: 8px;
+	color: RGBA(233, 234, 237, 1);
+}
+.Toy-Btn .Find{
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	background-color: RGBA(254, 205, 47, .1);
+	color: RGBA(254, 205, 47, 1);
+	border-radius: 8px;
+	text-decoration: none;
+	border-style: solid;
+	border-width: 1px;
+	border-color: RGBA(254, 205, 47, 1);
+}
+.Toy-Btn .Find:hover{
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	background-color: RGBA(254, 205, 47, 1);
+	border-radius: 8px;
+	color: RGBA(127, 103, 33, 1);
+}
+.Toy-Btn .Once-found{
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	background-color: RGBA(254, 205, 47, .1);
+	color: RGBA(121, 121, 121, 1);
+	border-radius: 8px;
+	text-decoration: none;
+	border-style: dotted;
+	border-width: 1px;
+	border-color: RGBA(121, 121, 121, 1);
+}
+.Toy-Btn .Once-found:hover{
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	background-color: RGBA(254, 205, 47, 1);
+	border-radius: 8px;
+	color: RGBA(127, 103, 33, 1);
+	border-color: RGBA(254, 205, 47, 1);
+}
+
+/*使用者*/
+
+.UserContent{
+	margin-top: 12px;
+}
+
+.User { 
+	width: 12.5%;
+	min-width: 160px;
+	/*1007 edit*/
+	padding: 10px 12px 0px 12px;
+	background-color: RGBA(90, 117, 121, 1);
+}
+
+.User-ImgWrapper{
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%;
+}
+
+/*使用者圖片*/
+
+.User-img{
+	position: absolute;
+	width: 100%;
+	padding-bottom: 100%;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+	border-radius: 50%;
+}
+
+/*測試圖片*/
+
+.User-img.Girl-A{
+	background-image: url(../img/Girl-Img-A.jpg);
+}
+
+.User-img.Girl-B{
+	background-image: url(../img/Girl-Img-B.jpg);
+}
+
+.User-img.Girl-C{
+	background-image: url(../img/Girl-Img-C.jpg);
+}
+
+.User-img.Girl-D{
+	background-image: url(../img/Girl-Img-D.jpg);
+}
+
+.User-img.Girl-E{
+	background-image: url(../img/Girl-Img-E.jpg);
+}
+
+.User-img.Girl-F{
+	background-image: url(../img/Girl-Img-F.jpg);
+}
+
+.User-img.Girl-G{
+	background-image: url(../img/Girl-Img-G.jpg);
+}
+
+.User-img.Girl-H{
+	background-image: url(../img/Girl-Img-H.jpg);
+}
+
+.User-img.Boy-A{
+	background-image: url(../img/Boy-Img-A.jpg);
+}
+.User-img.Boy-B{
+	background-image: url(../img/Boy-Img-B.jpg);
+}
+.User-img.Boy-C{
+	background-image: url(../img/Boy-Img-c.jpg);
+}
+.User-img.Boy-D{
+	background-image: url(../img/Boy-Img-D.jpg);
+}
+.User-img.Boy-E{
+	background-image: url(../img/Boy-Img-E.jpg);
+}
+.User-img.Boy-F{
+	background-image: url(../img/Boy-Img-F.jpg);
+}
+.User-img.Boy-G{
+	background-image: url(../img/Boy-Img-G.jpg);
+}
+
+
+
+/*使用者資訊*/
+
+.User-Info{
+	margin: 0 auto;
+}
+
+.User-Name{
+	/*margin-top: 4%; 1007 edit*/
+	font-family: Lato;
+	text-align: center;
+}
+.User-Name a{
+	display: block;
+	font-size: 1.1em;
+	letter-spacing: .02em;
+	color: RGBA(255, 255, 255, .8);
+	margin-bottom: 5%;
+	font-weight: 300;
+	min-width: 150px;
+	height: 1.3em;
+	overflow-x: hidden;
+}
+.User-Name a:hover{
+	cursor: pointer;
+	text-decoration: none;
+	color: RGBA(255, 255, 255, 1);
+	margin-bottom: 5%;
+}
+.User-Name a.Big{
+	/*margin-top: 6%; 1007 edit*/
+	/*margin-bottom: 9%; 1007 edit*/
+	font-size: 2em;
+}
+.User-Name.Profile{
+	margin-top: 0;
+	padding-left: 8%;
+	margin-bottom: 3%;
+	font-size: 2.5em;
+	letter-spacing: .04em;
+	/*1007 add*/
+	font-weight: 300;
+	color: RGBA(255, 255, 255, .9);
+}
+
+/*使用者興趣*/
+
+.User-Like{
+	padding: 4%;
+	font-family: Lato;
+	font-weight: 400;
+	font-size: 1em;
+	letter-spacing: .04em;
+	border-top-left-radius: 5px;
+}
+
+/*使用者好友*/
+
+.User-Friends{
+	padding: 4%;
+	font-family: Lato;
+	font-weight: 400;
+	font-size: 1em;
+	letter-spacing: .04em;
+	border-top-right-radius: 5px;
+}
+
+.User-Friends.Big{
+	border-radius: 0px;
+}
+
+/*喜歡使用者*/
+
+.User-Star-Hit{
+	position: relative;
+	width: 48%;
+	padding-top: 48%;
+}
+.User-Star-Padding{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	padding: 6px;
+}
+.User-Star{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: RGBA(254, 205, 47, 1);
+	border-radius: 50%;
+}
+.User-Star-Padding a:hover{
+	background-color: RGBA(255, 255, 255, 1);
+	text-decoration: none !important;
+}
+.User-Star i{
+	display: block;
+	position: absolute;
+	font-size: 1.2em;
+	top: 50%;
+	left: 50%;
+	margin-left: -.5em;
+	margin-top: -.5em;
+}
+
+/*聊天使用者*/
+
+.User-Chat-Hit{
+	position: relative;
+	width: 48%;
+	padding-top: 48%;
+}
+.User-Chat-Padding{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	padding: 6px;
+}
+.User-Chat{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: RGBA(254, 205, 47, 1);
+	border-radius: 50%;
+}
+.User-Chat-Padding a:hover{
+	background-color: RGBA(255, 255, 255, 1);
+	text-decoration: none !important;
+}
+.User-Chat i{
+	display: block;
+	position: absolute;
+	font-size: 1.2em;
+	top: 50%;
+	left: 50%;
+	margin-left: -.5em;
+	margin-top: -.5em;
+}
+
+/*使用者興趣顏色*/
+
+.User-Like.bg-Color-A{
+	background-color: RGBA(144, 41, 52, 1);
+	color: RGBA(221, 70, 77, 1);
+}
+.User-Like.bg-Color-B{
+	background-color: RGBA(127, 112, 127, 1);
+	color: RGBA(189, 167, 189, 1);
+}
+.User-Like.bg-Color-C{
+	background-color: RGBA(86, 106, 112, 1);
+	color: RGBA(123, 152, 162, 1);
+}
+.User-Like.bg-Color-D{
+	background-color: RGBA(145, 129, 78, 1);
+	color: RGBA(223, 198, 120, 1);
+}
+.User-Like.bg-Color-E{
+	background-color: RGBA(95, 113, 83, 1);
+	color: RGBA(137, 163, 121, 1);
+}
+.User-Like.bg-Color-F{
+	background-color: RGBA(148, 132, 123, 1);
+	color: RGBA(224, 200, 186, 1);
+}
+.User-Like.bg-Color-G{
+	background-color: RGBA(150, 134, 153, 1);
+	color: RGBA(49, 44, 50, 1);
+}
+.User-Like.bg-Color-H{
+	background-color: RGBA(57, 74, 76, 1);
+	color: RGBA(90, 117, 121, 1);
+}
+
+/*使用者好友顏色*/
+
+.User-Friends.bg-Color-A{
+	background-color: RGBA(144, 41, 52, 1);
+	color: RGBA(221, 70, 77, 1);
+}
+.User-Friends.bg-Color-B{
+	background-color: RGBA(127, 112, 127, 1);
+	color: RGBA(189, 167, 189, 1);
+}
+.User-Friends.bg-Color-C{
+	background-color: RGBA(86, 106, 112, 1);
+	color: RGBA(123, 152, 162, 1);
+}
+.User-Friends.bg-Color-D{
+	background-color: RGBA(145, 129, 78, 1);
+	color: RGBA(223, 198, 120, 1);
+}
+.User-Friends.bg-Color-E{
+	background-color: RGBA(95, 113, 83, 1);
+	color: RGBA(137, 163, 121, 1);
+}
+.User-Friends.bg-Color-F{
+	background-color: RGBA(148, 132, 123, 1);
+	color: RGBA(224, 200, 186, 1);
+}
+.User-Friends.bg-Color-G{
+	background-color: RGBA(150, 134, 153, 1);
+	color: RGBA(49, 44, 50, 1);
+}
+.User-Friends.bg-Color-H{
+	background-color: RGBA(57, 74, 76, 1);
+	color: RGBA(90, 117, 121, 1);
+}
+
+/*喜歡使用者顏色*/
+
+.User-Star.bg-Color-A{
+	background-color: RGBA(117, 33, 41, 1);
+	color: RGBA(221, 70, 77, 1);
+}
+.User-Star.bg-Color-B{
+	background-color: RGBA(102, 90, 102, 1);
+	color: RGBA(189, 167, 189, 1);
+}
+.User-Star.bg-Color-C{
+	background-color: RGBA(47, 58, 61, 1);
+	color: RGBA(123, 152, 162, 1);
+}
+.User-Star.bg-Color-D{
+	background-color: RGBA(102, 90, 55, 1);
+	color: RGBA(223, 198, 120, 1);
+}
+.User-Star.bg-Color-E{
+	background-color: RGBA(73, 88, 64, 1);
+	color: RGBA(137, 163, 121, 1);
+}
+.User-Star.bg-Color-F{
+	background-color: RGBA(97, 86, 80, 1);
+	color: RGBA(224, 200, 186, 1);
+}
+.User-Star.bg-Color-G{
+	background-color: RGBA(100, 89, 102, 1);
+	color: RGBA(49, 44, 50, 1);
+}
+.User-Star.bg-Color-H{
+	background-color: RGBA(38, 49, 51, 1);
+	color: RGBA(90, 117, 121, 1);
+}
+
+/*聊天使用者顏色*/
+
+.User-Chat.bg-Color-A{
+	background-color: RGBA(117, 33, 41, 1);
+	color: RGBA(221, 70, 77, 1);
+}
+.User-Chat.bg-Color-B{
+	background-color: RGBA(102, 90, 102, 1);
+	color: RGBA(189, 167, 189, 1);
+}
+.User-Chat.bg-Color-C{
+	background-color: RGBA(47, 58, 61, 1);
+	color: RGBA(123, 152, 162, 1);
+}
+.User-Chat.bg-Color-D{
+	background-color: RGBA(102, 90, 55, 1);
+	color: RGBA(223, 198, 120, 1);
+}
+.User-Chat.bg-Color-E{
+	background-color: RGBA(73, 88, 64, 1);
+	color: RGBA(137, 163, 121, 1);
+}
+.User-Chat.bg-Color-F{
+	background-color: RGBA(97, 86, 80, 1);
+	color: RGBA(224, 200, 186, 1);
+}
+.User-Chat.bg-Color-G{
+	background-color: RGBA(100, 89, 102, 1);
+	color: RGBA(49, 44, 50, 1);
+}
+.User-Chat.bg-Color-H{
+	background-color: RGBA(38, 49, 51, 1);
+	color: RGBA(90, 117, 121, 1);
+}
+
+/*使用者背景顏色*/
+
+.User.bg-Color-A {
+	background-color: RGBA(221, 70, 77, 1);
+}
+.User.bg-Color-B{
+	background-color: RGBA(189, 167, 189, 1);
+}
+.User.bg-Color-C{
+	background-color: RGBA(123, 152, 162, 1);
+}
+.User.bg-Color-D{
+	background-color: RGBA(223, 198, 120, 1);
+}
+.User.bg-Color-E{
+	background-color: RGBA(137, 163, 121, 1);
+}
+.User.bg-Color-F{
+	background-color: RGBA(224, 200, 186, 1);
+}
+.User.bg-Color-G{
+	background-color: RGBA(49, 44, 50, 1);
+}
+.User.bg-Color-H{
+	background-color: RGBA(90, 117, 121, 1);
+}
+
+
+/*背景顏色*/
+
+.bg-Color-A{
+	background-color: RGBA(221, 70, 77, 1);
+}
+.bg-Color-B{
+	background-color: RGBA(189, 167, 189, 1);
+}
+.bg-Color-C{
+	background-color: RGBA(123, 152, 162, 1);
+}
+.bg-Color-D{
+	background-color: RGBA(223, 198, 120, 1);
+}
+.bg-Color-E{
+	background-color: RGBA(137, 163, 121, 1);
+}
+.bg-Color-F{
+	background-color: RGBA(224, 200, 186, 1);
+}
+.bg-Color-G{
+	background-color: RGBA(49, 44, 50, 1);
+}
+.bg-Color-H{
+	background-color: RGBA(90, 117, 121, 1);
+}
+
+/*新增 20141017*/
+
+/*使用者工作*/
+
+.User-Job{
+	font-family: Lato;
+	font-weight: 900;
+	font-size: 10pt;
+	letter-spacing: .04em;
+	text-align: center;
+	overflow-x: hidden;
+	min-width: 140px;
+	height: 1.2em;
+
+}
+.User-Job.Big{
+	font-size: 1.2em;
+	letter-spacing: .06em;
+}
+
+/*使用者工作顏色*/
+
+.User-Job.bg-Color-A{
+	color: RGBA(117, 33, 41, 1);
+}
+.User-Job.bg-Color-B{
+	color: RGBA(102, 90, 102, 1);
+}
+.User-Job.bg-Color-C{
+	color: RGBA(47, 58, 61, 1);
+}
+.User-Job.bg-Color-D{
+	color: RGBA(102, 90, 55, 1);
+}
+.User-Job.bg-Color-E{
+	color: RGBA(73, 88, 64, 1);
+}
+.User-Job.bg-Color-F{
+	color: RGBA(97, 86, 80, 1);
+}
+.User-Job.bg-Color-G{
+	color: RGBA(100, 89, 102, 1);
+}
+.User-Job.bg-Color-H{
+	color: RGBA(38, 49, 51, 1);
+}
+
+/*使用者城市*/
+
+.User-City{
+	margin-bottom: 15px;
+	font-family: Lato;
+	font-weight: 400;
+	font-size: 8pt;
+	letter-spacing: .04em;
+	text-align: center;
+	padding-top: 4px;
+}
+.User-City.Big{
+	font-size: 1em;
+	letter-spacing: .05em;
+}
+
+/*使用者城市顏色*/
+
+.User-City.bg-Color-A{
+	color: RGBA(117, 33, 41, 1);
+}
+.User-City.bg-Color-B{
+	color: RGBA(102, 90, 102, 1);
+}
+.User-City.bg-Color-C{
+	color: RGBA(47, 58, 61, 1);
+}
+.User-City.bg-Color-D{
+	color: RGBA(102, 90, 55, 1);
+}
+.User-City.bg-Color-E{
+	color: RGBA(73, 88, 64, 1);
+}
+.User-City.bg-Color-F{
+	color: RGBA(97, 86, 80, 1);
+}
+.User-City.bg-Color-G{
+	color: RGBA(100, 89, 102, 1);
+}
+.User-City.bg-Color-H{
+	color: RGBA(38, 49, 51, 1);
+}
+/*使用者線條*/
+.User-Line{
+	padding-top: 1px;
+	background-color: RGBA(10, 10, 10, .1);
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*1024 edit*/
+
+/*Inbox*/
+
+#wrapper.Inbox-toggled {
+    padding-top: 0%;
+}
+#Inbox-sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    width: 0;
+    height: 100%;
+    right: 0;
+    margin-right: -74%;
+    margin-top: 11px;
+    overflow-y: auto;
+    background-color: RGBA(36, 31, 36, .9);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+/*右側欄寬度*/
+#wrapper.Inbox-toggled #Inbox-sidebar-wrapper {
+    width: 100%;
+}
+
+#Inbox-page-content-wrapper {
+    width: 100%;
+}
+
+#wrapper.Inbox-toggled #Inbox-page-content-wrapper {
+    position: absolute;
+    margin-left: -26%;
+}
+
+.Inbox-badge-color{
+	background-color: RGBA(45, 39, 46, 1);
+	color:RGBA(254, 205, 47, 1);
+	font-weight: 500;
+	font-family: Lato;
+}
+.Inbox-Notice{
+	width: 26%;
+	padding: 15px;
+	font-family: Lato;
+	font-weight: 400;
+	margin-top: -7px;
+	margin-bottom: -7px;
+}
+.Inbox-Notice .Chat{
+	display: block;
+	width: 100%;
+	font-size: 1.1em;
+	border-radius: 8px;
+	text-decoration: none;
+	background-color: RGBA(201, 240, 161, 1);
+	color: RGBA(70, 70, 70, 1);
+}
+.Inbox-Notice .Like{
+	display: block;
+	width: 100%;
+	font-size: 1.1em;
+	border-radius: 8px;
+	text-decoration: none;
+	background-color: RGBA(221, 70, 77, 1);
+	color: RGBA(71, 16, 22, 1);
+}
+
+.Video-Title{
+	margin-top: -20px;
+	margin-bottom: 20px;
+}
+.Video-Title h2{
+	font-family: Lato;
+	font-weight: 100;
+	color: RGBA(255, 255, 255, 1);
+}
+
+/*1030 edit*/
+
+.Video-arrow{
+	margin: 0px auto;
+	padding-left: 165px;
+}
+.Video-arrow-C{
+	margin: 0px auto;
+	padding-left: 200px;
+}
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {   
+	outline: 0 none;
+	border-color: rgba(254, 205, 47, 0.8);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(254, 205, 47, 0.6);
+	color: rgba(254, 205, 47, 1);
+}
+
+/*1112 edit*/
+
+.User-Age{
+	font-size: .8em;
+	letter-spacing: .02em;
+	color: RGBA(255, 255, 255, .8);
+	font-weight: 300;
+	margin-top: 5px;
+}
+.No-Logo{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 15em;
+	color: #B1B2B5;
+}
+.No-Logo-Word{
+	font-weight: 300;
+	letter-spacing: .02em;
+	font-family: Lato;
+	font-size: .2em;
+}
+
+/*平板*/
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/*行動版*/
+
+@media screen and (max-width: 767px) {
+
+    body {
+        padding-top: 50px;
+    }
+
+    /*行動版 Nav*/
+    .navbar-fixed-top .navbar-brand {
+        padding: 5px;
+    }
+    .navbar-brand img{
+		margin-top: 0;
+		height: 100%;
+	}
+	.navbar-toggle{
+		border-style: none;
+	}
+	.navbar-default .navbar-nav > li > a{
+		margin-right: 0px;
+		border-radius: 0;
+	}
+
+	/*行動版個人編輯彈出視窗*/
+	/*左側欄寬度*/
+	#wrapper.toggled #sidebar-wrapper {
+	    width: 100%;
+	}
+
+	/*行動版內容*/
+	.User{
+		width: 100%;
+	}
+	.User-Name{
+		font-size: 2em;
+	}
+
+}
